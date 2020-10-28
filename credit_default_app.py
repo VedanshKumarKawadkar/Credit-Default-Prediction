@@ -95,7 +95,7 @@ def app():
 
     prep_data = np.array(sample_data).reshape(1, -1)
 
-    predictor = load_prediction_model('H:\TechnoColabs Projects\credit_default_project\model_pickle_file.pkl')
+    predictor = load_prediction_model('model_pickle_file.pkl')
     prediction = predictor.predict(prep_data)
     result = get_keys_vals(prediction, result_label)
 
